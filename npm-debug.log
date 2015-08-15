@@ -1,0 +1,147 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'dialog' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose cache add [ 'dialog', null ]
+5 verbose cache add name=undefined spec="dialog" args=["dialog",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'dialog',
+6 verbose parsed url   path: 'dialog',
+6 verbose parsed url   href: 'dialog' }
+7 silly lockFile 863be329-dialog dialog
+8 verbose lock dialog /Users/leo/.npm/863be329-dialog.lock
+9 silly lockFile 863be329-dialog dialog
+10 silly lockFile 863be329-dialog dialog
+11 verbose addNamed [ 'dialog', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 847ceadd-dialog dialog@
+14 verbose lock dialog@ /Users/leo/.npm/847ceadd-dialog.lock
+15 silly addNameRange { name: 'dialog', range: '*', hasData: false }
+16 verbose request where is /dialog
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id e231465583b284c3
+19 verbose url raw /dialog
+20 verbose url resolving [ 'https://registry.npmjs.org/', './dialog' ]
+21 verbose url resolved https://registry.npmjs.org/dialog
+22 verbose request where is https://registry.npmjs.org/dialog
+23 info trying registry request attempt 1 at 17:50:47
+24 http GET https://registry.npmjs.org/dialog
+25 http 200 https://registry.npmjs.org/dialog
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"7IZA63A1M2I6HRGC2CY2YSOOX"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '7367',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Sat, 15 Aug 2015 16:50:48 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-lcy1126-LCY',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1439657447.752738,VS0,VE414',
+26 silly registry.get     vary: 'Accept' } ]
+27 silly addNameRange number 2 { name: 'dialog', range: '*', hasData: true }
+28 silly addNameRange versions [ 'dialog',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.2',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.1.5',
+28 silly addNameRange     '0.1.6',
+28 silly addNameRange     '0.1.7',
+28 silly addNameRange     '0.1.8' ] ]
+29 verbose addNamed [ 'dialog', '0.1.8' ]
+30 verbose addNamed [ '0.1.8', '0.1.8' ]
+31 silly lockFile ea43f844-dialog-0-1-8 dialog@0.1.8
+32 verbose lock dialog@0.1.8 /Users/leo/.npm/ea43f844-dialog-0-1-8.lock
+33 silly lockFile 34d7c102-pmjs-org-dialog-dialog-0-1-8-tgz https://registry.npmjs.org/dialog/-/dialog-0.1.8.tgz
+34 verbose lock https://registry.npmjs.org/dialog/-/dialog-0.1.8.tgz /Users/leo/.npm/34d7c102-pmjs-org-dialog-dialog-0-1-8-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/dialog/-/dialog-0.1.8.tgz',
+35 verbose addRemoteTarball   '01e84f3c3c3e1c71dfbe1e38119a73a60d69395f' ]
+36 info retry fetch attempt 1 at 17:50:48
+37 verbose fetch to= /var/folders/5x/vv4w1z0j3zb9x2s83fjz7dzh0000gn/T/npm-15298-88vceDce/registry.npmjs.org/dialog/-/dialog-0.1.8.tgz
+38 http GET https://registry.npmjs.org/dialog/-/dialog-0.1.8.tgz
+39 http 200 https://registry.npmjs.org/dialog/-/dialog-0.1.8.tgz
+40 silly lockFile 34d7c102-pmjs-org-dialog-dialog-0-1-8-tgz https://registry.npmjs.org/dialog/-/dialog-0.1.8.tgz
+41 silly lockFile 34d7c102-pmjs-org-dialog-dialog-0-1-8-tgz https://registry.npmjs.org/dialog/-/dialog-0.1.8.tgz
+42 silly lockFile ea43f844-dialog-0-1-8 dialog@0.1.8
+43 silly lockFile ea43f844-dialog-0-1-8 dialog@0.1.8
+44 silly lockFile 847ceadd-dialog dialog@
+45 silly lockFile 847ceadd-dialog dialog@
+46 silly resolved [ { author:
+46 silly resolved      { name: 'Tomás Pollak',
+46 silly resolved        email: 'tomas@forkhq.com',
+46 silly resolved        url: 'http://forkhq.com' },
+46 silly resolved     name: 'dialog',
+46 silly resolved     description: 'Show alert dialogs using Node.',
+46 silly resolved     version: '0.1.8',
+46 silly resolved     repository: { url: 'https://github.com/tomas/dialog' },
+46 silly resolved     bin: { show_dialog: './bin/dialog.js' },
+46 silly resolved     dependencies: {},
+46 silly resolved     devDependencies: {},
+46 silly resolved     optionalDependencies: {},
+46 silly resolved     engines: { node: '*' },
+46 silly resolved     _id: 'dialog@0.1.8',
+46 silly resolved     dist:
+46 silly resolved      { shasum: '01e84f3c3c3e1c71dfbe1e38119a73a60d69395f',
+46 silly resolved        tarball: 'http://registry.npmjs.org/dialog/-/dialog-0.1.8.tgz' },
+46 silly resolved     _npmVersion: '1.1.69',
+46 silly resolved     _npmUser: { name: 'tomas', email: 'tomas@forkhq.com' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     directories: {},
+46 silly resolved     _shasum: '01e84f3c3c3e1c71dfbe1e38119a73a60d69395f',
+46 silly resolved     _from: 'dialog@',
+46 silly resolved     _resolved: 'https://registry.npmjs.org/dialog/-/dialog-0.1.8.tgz' } ]
+47 info install dialog@0.1.8 into /usr/local/lib
+48 info installOne dialog@0.1.8
+49 verbose lib/node_modules/dialog unbuild
+50 verbose tar unpack /Users/leo/.npm/dialog/0.1.8/package.tgz
+51 silly lockFile c3f7b1c6-sr-local-lib-node-modules-dialog tar:///usr/local/lib/node_modules/dialog
+52 verbose lock tar:///usr/local/lib/node_modules/dialog /Users/leo/.npm/c3f7b1c6-sr-local-lib-node-modules-dialog.lock
+53 silly lockFile 796e0757-leo-npm-dialog-0-1-8-package-tgz tar:///Users/leo/.npm/dialog/0.1.8/package.tgz
+54 verbose lock tar:///Users/leo/.npm/dialog/0.1.8/package.tgz /Users/leo/.npm/796e0757-leo-npm-dialog-0-1-8-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/dialog'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/dialog']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/dialog',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/dialog',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 15.0.0
+59 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "dialog"
+60 error cwd /Users/leo/Development/Javascript/watch_test
+61 error node -v v0.10.33
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/dialog
+64 error fstream_path /usr/local/lib/node_modules/dialog
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/dialog'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]
