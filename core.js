@@ -16,7 +16,7 @@ var workflow = {
     files : []
 };
 
-var commands = [
+var commands = [/*
   {
       task : "copy",
       options : {
@@ -44,6 +44,14 @@ var commands = [
         context : workflow,
         destination : getUserHome() + "/Downloads/f3"
       }
+  }*/
+
+  {
+    task : "copy",
+    options :{
+      context : workflow,
+      destination: getUserHome() + "/Downloads/Big Installations/"
+    }
   }
 ];
 
@@ -64,7 +72,8 @@ function execute(tasks , i){
 }
 
 console.log("starting");
-tasks.getFiles(getUserHome()+"/Downloads/f0/" , "*.+(jpg|png)" , function(files){
+tasks.getFiles({ minSize : 40 , maxSize:100 ,directory : getUserHome()+"/Downloads/Installations/" , fileFormat : "*.dmg"} , function(files){
+  console.log(files);
   workflow.files = files;
   execute(commands , 0);
 });
