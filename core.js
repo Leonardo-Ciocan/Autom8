@@ -45,12 +45,18 @@ var commands = [/*
         destination : getUserHome() + "/Downloads/f3"
       }
   }*/
-
   {
-    task : "copy",
+    task : "run",
     options :{
       context : workflow,
-      destination: getUserHome() + "/Downloads/Big Installations/"
+      program : "uglifyjs",
+      parameters : ["{file}","-o" , "{file}"]
+    }
+  },
+  {
+    task: "notify",
+    options : {
+
     }
   }
 ];
@@ -60,6 +66,8 @@ var fmap = {
   "rotate" : tasks.rotate,
   "resize" : tasks.resize,
   "move" : tasks.move,
+  "run" : tasks.run,
+  "notify" : tasks.notify
 };
 
 function execute(tasks , i){
@@ -72,7 +80,7 @@ function execute(tasks , i){
 }
 
 console.log("starting");
-tasks.getFiles({ minSize : 40 , maxSize:100 ,directory : getUserHome()+"/Downloads/Installations/" , fileFormat : "*.dmg"} , function(files){
+tasks.getFiles({directory : getUserHome()+"/Downloads/Javascript/" , fileFormat : "*.js"} , function(files){
   console.log(files);
   workflow.files = files;
   execute(commands , 0);
