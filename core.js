@@ -29,13 +29,35 @@ var commands = [
       options : {
         context : workflow
       }
+  },
+  {
+      task: "resize",
+      options : {
+        context : workflow,
+        width:400,
+        height:400
+      }
+  },
+  {
+      task : "move",
+      options:{
+        context : workflow,
+        destination : getUserHome() + "/Downloads/f3"
+      }
   }
 ];
+
+var fmap = {
+  "copy" : tasks.copy,
+  "rotate" : tasks.rotate,
+  "resize" : tasks.resize,
+  "move" : tasks.move,
+};
 
 function execute(tasks , i){
     if(i > tasks.length -1) return;
     var task = tasks[i];
-    tasks[task.task](task.options , function(files){
+    fmap[task.task](task.options , function(files){
       workflow.files = files;
       execute(tasks , i+1);
     });
